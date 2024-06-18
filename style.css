@@ -150,6 +150,92 @@ body {
     padding-top: 8px;
 }
 
+@media (max-width: 750px) {
+    body {
+        padding: 25px;
+    }
+
+    .main-testimonials {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .testimonial {
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08);
+        transition: none;
+    }
+
+    .testimonial:hover {
+        transform: none;
+    }
+
+    .big-quotation {
+        top: -10px;
+        right: 10px;
+        width: 40px;
+    }
+
+    .profile {
+        margin-bottom: 10px;
+    }
+
+    .profile img {
+        height: 24px;
+        width: 24px;
+        margin-right: 10px;
+    }
+
+    .profile h3 {
+        font-size: 16px;
+    }
+
+    .profile .tag {
+        font-size: 11px;
+    }
+
+    .main-copy {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .final-quote {
+        font-size: 14px;
+    }
+
+    .Daniel,
+    .Jonathan,
+    .Jeanette,
+    .Patrick,
+    .Kira {
+        width: 100%;
+        height: auto;
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .Daniel {
+        background-color: #733FC8;
+    }
+
+    .Jonathan {
+        background-color: #48556A;
+    }
+
+    .Jeanette {
+        background-color: #FFFFFF;
+    }
+
+    .Patrick {
+        background-color: #19202D;
+    }
+
+    .Kira {
+        background-color: #FFFFFF;
+    }
+}
 
 @media (max-width: 470px) {
     body {
@@ -166,6 +252,11 @@ body {
         width: 100%;
         padding: 20px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08);
+        transition: none;
+    }
+
+    .testimonial:hover {
+        transform: none;
     }
 
     .big-quotation {
