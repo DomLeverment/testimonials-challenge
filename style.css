@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: "Barlow", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: #ECF2F8;
+    min-height: 100vh;
+    padding: 164px 165px;
+}
+
+.main-testimonials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    gap: 30px;
+}
+
+.testimonial {
+    padding: 32px 26px;
+    position: relative;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: all 1s;
+}
+
+.testimonial:hover{
+    transform: scale(1.05);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.profile .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile img {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.profile h3 {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 0;
+    padding-bottom: 4px;
+}
+
+.profile .tag {
+    color: hsl(0, 0%, 80%);
+    font-size: 11px;
+    margin: 0;
+}
+
+.outside {
+    border: 2px solid #A775F1;
+}
+
+.main-copy {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.black {
+    color: #48556A;
+}
+
+#name-color {
+    color: #48556A;
+
+}
+
+.final-quote {
+    font-size: 13px;
+    color: #CFCFCF;
+}
+
+.Daniel {
+    width: 540px;
+    height: 282px;
+    background-color: #733FC8;
+    border-radius: 5px;
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.big-quotation {
+    position: absolute;
+    color: #A775F1;
+    top: 0px;
+    right: 80px; 
+    width: 104px;
+    height: auto;
+    opacity: 0.2; 
+}
+
+.Jonathan {
+    width: 255px;
+    height: 282px;
+    border-radius: 5px;
+    background-color: #48556A;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.Jeanette {
+    width: 255px;
+    height: 266px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+
+.Patrick {
+    width: 540px;
+    height: 266px;
+    border-radius: 5px;
+    background-color: #19202D;
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.Kira {
+    width: 255px;
+    height: 580px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+}
+
+.long {
+    padding-top: 8px;
+}
+
+
+@media (max-width: 470px) {
+    body {
+        padding: 25px;
+    }
+
+    .main-testimonials {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .testimonial {
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08);
+    }
+
+    .big-quotation {
+        top: -10px;
+        right: 10px;
+        width: 40px;
+    }
+
+    .profile {
+        margin-bottom: 10px;
+    }
+
+    .profile img {
+        height: 24px;
+        width: 24px;
+        margin-right: 10px;
+    }
+
+    .profile h3 {
+        font-size: 16px;
+    }
+
+    .profile .tag {
+        font-size: 11px;
+    }
+
+    .main-copy {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .final-quote {
+        font-size: 14px;
+    }
+
+    .Daniel,
+    .Jonathan,
+    .Jeanette,
+    .Patrick,
+    .Kira {
+        width: 100%;
+        height: auto;
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .Daniel {
+        background-color: #733FC8;
+    }
+
+    .Jonathan {
+        background-color: #48556A;
+    }
+
+    .Jeanette {
+        background-color: #FFFFFF;
+    }
+
+    .Patrick {
+        background-color: #19202D;
+    }
+
+    .Kira {
+        background-color: #FFFFFF;
+    }
+}
